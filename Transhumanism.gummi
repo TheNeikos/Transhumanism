@@ -1,0 +1,7 @@
+version=0.6.0
+typesetter=pdflatex
+steps=texpdf
+root=/home/neikos/projects/my_projects/scientific_works/draft.tex
+
+
+file=/home/neikos/projects/my_projects/scientific_works/bibliography.bib

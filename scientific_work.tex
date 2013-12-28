@@ -1,0 +1,142 @@
+\documentclass[
+			12pt,
+			a4paper,
+			cleardoubleempty,
+			final,
+			twoside
+				]{scrbook}
+%Gummi|065|=)
+
+\usepackage[top=3cm,
+			bottom=2cm,
+			inner=4cm,
+			outer=2.5cm,
+			]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead[\rightmark]{\thepage}
+\rhead[\thepage]{\leftmark}
+\renewcommand{\headrulewidth}{1pt}
+
+
+\usepackage[explicit]{titlesec}
+\titleformat{\chapter}%
+            {\fontsize{14}{14}\bfseries}
+            {\llap{% label
+               \thechapter
+               \hskip 9pt}#1}%
+            {0pt}% horizontal sep
+            {}% before
+\titleformat{\section}%
+            {\fontsize{12}{12}\bfseries}
+            {\llap{% label
+               \thesection\hskip 9pt}#1}%
+            {0pt}% horizontal sep
+            {}% before
+\titleformat{\subsection}%
+            {\fontsize{12}{12}}% format
+            {\llap{% label
+               \thesubsection\hskip 9pt}#1}%
+            {0pt}% horizontal sep
+            {}% before
+
+
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{helvet}
+
+
+\title{\fontsize{14}{14}Bachelor Thesis \\ in \\Allgemeine Informatik
+\fontsize{22}{22}\textbf{Transhumanism}\\
+\fontsize{18}{18} The New Human}
+\author{Marcel M\"uller}
+\date{\today}
+
+\begin{document}
+
+\setcounter{secnumdepth}{3}
+
+
+\begin{titlepage}
+\begin{center}
+
+
+\fontsize{18}{18}
+\textsc{Wissenschaftliche Arbeit \\[0.5cm] in \\[0.5cm] Allgemeine Informatik}\\[1.5cm]
+
+% Title
+\fontsize{22}{22}
+{ \bfseries Transhumanism \\[0.4cm] }
+\fontsize{18}{18}
+{ The new Human\\[10cm] }
+
+% Author and supervisor
+\begin{tabular}{l l}
+	 Referent:  & Hr. Wurzlaff \\
+	 Koreferent: & N/A\\
+	 Vorgelegt am: & \today\\ % TODO: Put date
+	 Vorgelegt von: & Marcel M\"ueller\\
+	 & [Matrikelnummer] \\
+	 & [Strasse und Hausnummer] \\
+	 & [PLZ und Stadt] \\
+	 & [HFU-Emailadresse]\\
+\end{tabular}
+
+\vfill
+
+% Bottom of the page
+{\large \today}
+
+\end{center}
+\end{titlepage}
+
+\frontmatter
+
+% TODO: Add Preamble
+
+% TODO: Add Abstract
+
+\newpage
+\tableofcontents
+
+% TODO: Add Pictures in case they exist
+
+% TODO: Add Tables in case they exist
+
+% TODO: Add ABBR in case they exist
+
+\cleardoubleemptypage
+
+\newpage
+
+\mainmatter
+\chapter{Titel}
+\section{This is a section}
+\subsection{Sub Section}
+\begin{par}
+	This is a paragraph
+\end{par}
+
+\newpage
+
+Text
+Text
+
+\newpage
+
+\subsection{Another Subsection}
+
+\backmatter
+
+% TODO: Add Thanks
+
+\end{document}
